@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+	<script type="text/javascript" src="paperjs-v0.11.5\dist\paper-full.js"></script>
+	<link rel="stylesheet" type="text/css" href="circles.css"></link>
+	<!--<script type="text/paperscript" canvas="myCanvas">
+			// Create a Paper.js Path to draw a line into it:
+	for(var x = 0; x < 1000; x += 100){
+		for(var y  = 0; y <1000; y+= 100){
+			new Path.Circle(new Point(x, y), 5).fillColor = 'yellow';
+		}
+	}
+	</script>-->
+	<script type="text/paperscript" canvas="myCanvas">
+		function onKeyDown(event) {
+		new Path.Circle(new Point(100,100), 10).fillColor = "orange";
+		}
+	</script>
+	
+    <title>Patatap Clone</title>
+</head>
+<body>
+    <canvas id="myCanvas" resize></canvas>
+</body>
+</html>
